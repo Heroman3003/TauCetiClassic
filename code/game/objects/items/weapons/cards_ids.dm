@@ -83,6 +83,7 @@
 		/obj/item/clothing/tie/holobadge,
 		/obj/structure/closet/crate/secure,
 		/obj/structure/closet/secure_closet,
+		/obj/structure/sign/double/barsign,
 		/obj/machinery/computer/libraryconsole/bookmanagement,
 		/obj/machinery/computer,
 		/obj/machinery/power,

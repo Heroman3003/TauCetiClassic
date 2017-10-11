@@ -18,3 +18,13 @@ var/bar_sing_global = pick("lv426", "zocalo", "4theemprah", "ishimura",\
 /obj/structure/sign/double/barsign/proc/ChangeSign(Text)
 	src.icon_state = "[Text]"
 	return
+
+/obj/structure/sign/double/barsign/attackby(obj/item/I, mob/user)
+	if(istype(I, /obj/item/weapon/card/emag) && !(icon_state == "syndiebar"))
+		emag_act()
+	else
+		return
+
+/obj/structure/sign/double/barsign/proc/emag_act()
+	ChangeSign("syndiebar")
+	return
